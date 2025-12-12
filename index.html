@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD06 - LOE y CTE: Normativa de Edificación</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado fijo -->
+        <header class="header">
+            <h1><i class="fas fa-building"></i> UD06 - Normas Profesionales de Edificación</h1>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">8</span> <!-- CAMBIADO: 8 slides totales -->
+            </div>
+        </header>
+
+        <!-- Área principal de contenido -->
+        <main class="content-area">
+            <!-- Slide 0: Introducción -->
+            <section id="slide-0" class="slide active">
+                <div class="slide-header">
+                    <h2><i class="fas fa-landmark"></i> Ley de Ordenación de la Edificación (LOE) y Código Técnico de la Edificación (CTE)</h2>
+                    <p class="subtitle">Unidad Didáctica 06 - Normas propias de la actividad profesional</p>
+                </div>
+                <div class="slide-content">
+                    <div class="intro-card">
+                        <div class="intro-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="intro-text">
+                            <h3>Objetivos de aprendizaje</h3>
+                            <ul>
+                                <li>Comprender el marco jurídico de la LOE (Ley 38/1999)</li>
+                                <li>Diferenciar los tipos de responsabilidad en la edificación</li>
+                                <li>Identificar a los agentes de la edificación y sus funciones</li>
+                                <li>Conocer las exigencias básicas del CTE y su aplicación</li>
+                                <li>Analizar la normativa de colegiación profesional</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="author-info">
+                        <p><strong>Desarrollado por:</strong> Florencio Aguilar</p>
+                        <p><strong>Fuentes:</strong> Apuntes LOE, CTE para Arquitectura Efímera, Glosario Quizlet</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-next" onclick="nextSlide()">Comenzar <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 1: LOE - Marco Jurídico -->
+            <section id="slide-1" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-balance-scale"></i> LOE: Marco Jurídico</h2>
+                </div>
+                <div class="slide-content">
+                    <div class="info-box important">
+                        <h3><i class="fas fa-info-circle"></i> ¿Qué regula la LOE?</h3>
+                        <p>La <strong>Ley 38/1999, de 5 de noviembre</strong> regula específicamente el <strong>proceso de edificación</strong>, no siendo una norma técnica completa del sector.</p>
+                    </div>
+                    
+                    <div class="grid-container">
+                        <div class="card">
+                            <h4><i class="fas fa-bullseye"></i> Objetivo principal</h4>
+                            <p>Regular el proceso edificativo, abordando aspectos como:</p>
+                            <ul>
+                                <li>Plazos de ejecución</li>
+                                <li>Garantías y responsabilidades</li>
+                                <li>Agentes involucrados</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h4><i class="fas fa-book"></i> Remisiones legislativas</h4>
+                            <p>La LOE se complementa con:</p>
+                            <ul>
+                                <li>Ley 12/1986 sobre Propiedad Horizontal</li>
+                                <li>Libro del Edificio</li>
+                                <li>Normativa de Prevención de Riesgos Laborales</li>
+                                <li>Intervención de Administraciones Públicas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h4><i class="fas fa-code"></i> Código Técnico</h4>
+                            <p>La Disposición Final Segunda autoriza la creación del <strong>CTE</strong>, ampliando el marco normativo específico del sector.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-next" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 2: Responsabilidades LOE -->
+            <section id="slide-2" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-shield-alt"></i> Responsabilidades según la LOE</h2>
+                </div>
+                <div class="slide-content">
+                    <div class="info-box">
+                        <p>La LOE establece un sistema de responsabilidades que protege al adquirente de la vivienda, diferenciando entre tipos de daños y plazos de garantía.</p>
+                    </div>
+                    
+                    <div class="responsibility-cards">
+                        <div class="resp-card decenal">
+                            <div class="resp-header">
+                                <h3><i class="fas fa-hard-hat"></i> Responsabilidad DECENAL</h3>
+                                <span class="resp-duration">10 años</span>
+                            </div>
+                            <div class="resp-body">
+                                <p><strong>Cubre:</strong> Desperfectos que comprometen la resistencia mecánica y estabilidad del edificio.</p>
+                                <div class="resp-examples">
+                                    <h4>Ejemplos:</h4>
+                                    <ul>
+                                        <li>Daños estructurales en cimentación, soportes, vigas</li>
+                                        <li>Problemas de asentamiento o hundimiento del terreno</li>
+                                        <li>Defectos graves en materiales que comprometan solidez</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resp-card trienal">
+                            <div class="resp-header">
+                                <h3><i class="fas fa-home"></i> Responsabilidad TRIENAL</h3>
+                                <span class="resp-duration">3 años</span>
+                            </div>
+                            <div class="resp-body">
+                                <p><strong>Cubre:</strong> Vicios o defectos que afectan la habitabilidad del edificio.</p>
+                                <div class="resp-examples">
+                                    <h4>Ejemplos:</h4>
+                                    <ul>
+                                        <li>Problemas de estanqueidad (filtraciones de agua)</li>
+                                        <li>Defectos en instalaciones (fontanería, electricidad, gas)</li>
+                                        <li>Problemas de aislamiento térmico/acústico</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resp-card anual">
+                            <div class="resp-header">
+                                <h3><i class="fas fa-paint-roller"></i> Responsabilidad ANUAL</h3>
+                                <span class="resp-duration">1 año</span>
+                            </div>
+                            <div class="resp-body">
+                                <p><strong>Cubre:</strong> Defectos de acabado que obstaculizan el uso pero son fácilmente subsanables.</p>
+                                <div class="resp-examples">
+                                    <h4>Ejemplos:</h4>
+                                    <ul>
+                                        <li>Defectos en revestimientos (grietas, desconchados)</li>
+                                        <li>Problemas menores en carpinterías</li>
+                                        <li>Defectos en acabados de cocinas/baños</li>
+                                        <li>Problemas en remates y acabados</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-next" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 3: Agentes de la Edificación -->
+            <section id="slide-3" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-users"></i> Agentes de la Edificación</h2>
+                </div>
+                <div class="slide-content">
+                    <div class="agents-grid">
+                        <div class="agent-card">
+                            <div class="agent-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Promotor</h3>
+                            <p>Impulsa el proceso de edificación y responde solidariamente ante defectos constructivos.</p>
+                        </div>
+                        
+                        <div class="agent-card">
+                            <div class="agent-icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <h3>Proyectista</h3>
+                            <p>Redacta el proyecto de edificación, verificando su cumplimiento con el plan urbanístico.</p>
+                        </div>
+                        
+                        <div class="agent-card">
+                            <div class="agent-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Constructor</h3>
+                            <p>Asume contractualmente la ejecución del proceso edificativo con medios propios o ajenos.</p>
+                        </div>
+                        
+                        <div class="agent-card">
+                            <div class="agent-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <h3>Jefe de Obra</h3>
+                            <p>Representa técnicamente la obra y supervisa su ejecución.</p>
+                        </div>
+                        
+                        <div class="agent-card">
+                            <div class="agent-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Director de Obra</h3>
+                            <p>Se encarga de elementos estructurales y básicos, interpretando y dando instrucciones.</p>
+                        </div>
+                        
+                        <div class="agent-card">
+                            <div class="agent-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h3>Director Ejecución</h3>
+                            <p>(Aparejador/Arquitecto técnico) Controla calidad de materiales durante el proceso.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-box">
+                        <h3><i class="fas fa-scale-balanced"></i> Relación con Código Civil - Art. 1591</h3>
+                        <p>La LOE convive con el artículo 1591 del Código Civil, pero ofrece una regulación más específica para procesos de construcción, deslegitimando en parte la jurisprudencia relacionada.</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-next" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 4: CTE - Introducción -->
+            <section id="slide-4" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-file-code"></i> Código Técnico de la Edificación (CTE)</h2>
+                </div>
+                <div class="slide-content">
+                    <div class="info-box important">
+                        <h3><i class="fas fa-question-circle"></i> ¿Qué es el CTE?</h3>
+                        <p>El <strong>Real Decreto 314/2006, de 17 de marzo</strong> establece las exigencias básicas de calidad que deben cumplir los edificios y sus instalaciones.</p>
+                    </div>
+                    
+                    <div class="cte-characteristics">
+                        <div class="characteristic">
+                            <i class="fas fa-bullseye"></i>
+                            <h4>Enfoque de Prestaciones</h4>
+                            <p>Establece estados límite y prestaciones, no métodos de cálculo específicos.</p>
+                        </div>
+                        
+                        <div class="characteristic">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Permite Innovación</h4>
+                            <p>Da libertad para elegir herramientas y técnicas mientras se cumplan requisitos mínimos.</p>
+                        </div>
+                        
+                        <div class="characteristic">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>Actualizaciones periódicas</h4>
+                            <p>Se ha modificado para adaptarse a directivas europeas y acciones contra el cambio climático.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cte-structure">
+                        <h3><i class="fas fa-sitemap"></i> Estructura del CTE</h3>
+                        <div class="structure-diagram">
+                            <div class="structure-level">
+                                <div class="level-box">
+                                    <h4>Parte I</h4>
+                                    <p>Exigencias Básicas</p>
+                                </div>
+                                <div class="arrow-down"><i class="fas fa-arrow-down"></i></div>
+                            </div>
+                            
+                            <div class="structure-level">
+                                <div class="level-box">
+                                    <h4>Parte II</h4>
+                                    <p>Documentos Básicos (DB)</p>
+                                    <small>Procedimientos para cumplir exigencias</small>
+                                </div>
+                                <div class="arrow-down"><i class="fas fa-arrow-down"></i></div>
+                            </div>
+                            
+                            <div class="structure-level">
+                                <div class="level-box">
+                                    <h4>Documentos Complementarios</h4>
+                                    <p>DA, DB con comentarios, DR</p>
+                                    <small>No reglamentarios, de apoyo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-next" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 5: Exigencias Básicas CTE -->
+            <section id="slide-5" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-tasks"></i> Exigencias Básicas del CTE</h2>
+                </div>
+                <div class="slide-content">
+                    <div class="requirements-grid">
+                        <div class="req-card se">
+                            <div class="req-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>SE</h3>
+                            <h4>Seguridad Estructural</h4>
+                            <p>Garantiza resistencia y estabilidad del edificio durante su vida útil.</p>
+                            <div class="db-info">
+                                <span class="db-tag">DB-SE</span>
+                                <span class="db-tag">DB-SE-AE</span>
+                                <span class="db-tag">DB-SE-C</span>
+                            </div>
+                        </div>
+                        
+                        <div class="req-card si">
+                            <div class="req-icon">
+                                <i class="fas fa-fire-extinguisher"></i>
+                            </div>
+                            <h3>SI</h3>
+                            <h4>Seguridad Incendios</h4>
+                            <p>Reduce riesgos de daños a personas y bienes en caso de incendio.</p>
+                            <div class="db-info">
+                                <span class="db-tag">DB-SI</span>
+                            </div>
+                        </div>
+                        
+                        <div class="req-card sua">
+                            <div class="req-icon">
+                                <i class="fas fa-wheelchair"></i>
+                            </div>
+                            <h3>SUA</h3>
+                            <h4>Seguridad y Accesibilidad</h4>
+                            <p>Prevención de accidentes y accesibilidad universal.</p>
+                            <div class="db-info">
+                                <span class="db-tag">DB-SUA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="req-card hs">
+                            <div class="req-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>HS</h3>
+                            <h4>Salubridad</h4>
+                            <p>Protege salud de usuarios y preserva medio ambiente.</p>
+                            <div class="db-info">
+                                <span class="db-tag">DB-HS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="req-card hr">
+                            <div class="req-icon">
+                                <i class="fas fa-volume-mute"></i>
+                            </div>
+                            <h3>HR</h3>
+                            <h4>Protección Ruido</h4>
+                            <p>Limita molestias causadas por ruido en edificios.</p>
+                            <div class="db-info">
+                                <span class="db-tag">DB-HR</span>
+                            </div>
+                        </div>
+                        
+                        <div class="req-card he">
+                            <div class="req-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>HE</h3>
+                            <h4>Ahorro Energía</h4>
+                            <p>Promueve eficiencia energética y uso de renovables.</p>
+                            <div class="db-info">
+                                <span class="db-tag">DB-HE</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cte-updates">
+                        <h3><i class="fas fa-history"></i> Actualizaciones importantes del CTE</h3>
+                        <ul>
+                            <li><strong>RD 1371/2007</strong> - Primera modificación</li>
+                            <li><strong>Orden FOM/1635/2013</strong> - Actualización DB-HE</li>
+                            <li><strong>RD 732/2019</strong> - Adaptación a directivas UE</li>
+                            <li><strong>RD 450/2022</strong> - Última modificación</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-next" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 6: Colegiación Profesional -->
+            <section id="slide-6" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-user-graduate"></i> Colegiación Profesional</h2>
+                </div>
+                <div class="slide-content">
+                    <div class="info-box important">
+                        <h3><i class="fas fa-exclamation-circle"></i> Obligatoriedad de colegiación</h3>
+                        <p>Según el <strong>Decreto 893/1972</strong>, para ejercer legalmente como Decorador/Diseñador de Interiores es requisito indispensable estar colegiado.</p>
+                    </div>
+                    
+                    <div class="professional-info">
+                        <div class="prof-card">
+                            <h4><i class="fas fa-file-contract"></i> Atribuciones profesionales</h4>
+                            <p>Según RD 902/1977, los decoradores pueden:</p>
+                            <ul>
+                                <li>Formular y redactar proyectos de decoración</li>
+                                <li>Dirigir trabajos de decoración</li>
+                                <li>Concebir diseños de elementos decorativos</li>
+                                <li>Controlar calidad de materiales</li>
+                                <li>Realizar valoraciones, peritajes e informes</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="prof-card">
+                            <h4><i class="fas fa-graduation-cap"></i> Titulaciones admitidas</h4>
+                            <ul>
+                                <li>Graduado en Diseño (especialidad Interiores)</li>
+                                <li>Estudios Superiores de Diseño (Interiores)</li>
+                                <li>Técnico Superior de Artes Plásticas y Diseño</li>
+                                <li>Graduado en Artes Aplicadas (Decoración)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="trámites-box">
+                        <h3><i class="fas fa-clipboard-list"></i> Trámites de colegiación</h3>
+                        <div class="tramites-grid">
+                            <div class="tramite">
+                                <h4><i class="fas fa-desktop"></i> Telemática</h4>
+                                <ul>
+                                    <li>Fotografía tamaño carnet</li>
+                                    <li>Título oficial escaneado</li>
+                                    <li>DNI escaneado</li>
+                                    <li>Cuota: 150€</li>
+                                </ul>
+                            </div>
+                            <div class="tramite">
+                                <h4><i class="fas fa-building"></i> Presencial</h4>
+                                <ul>
+                                    <li>Fotocopia compulsada del título</li>
+                                    <li>Fotocopia del DNI</li>
+                                    <li>Instancia de solicitud</li>
+                                    <li>Cuota: 150€</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-next" onclick="nextSlide()">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 7: Cuestionario -->
+            <section id="slide-7" class="slide">
+                <div class="slide-header">
+                    <h2><i class="fas fa-question-circle"></i> Cuestionario Interactivo</h2>
+                    <p class="subtitle">Evalúa tus conocimientos sobre LOE y CTE</p>
+                </div>
+                <div class="slide-content">
+                    <div id="quiz-container">
+                        <form id="quiz-form">
+                            <!-- Las preguntas se generarán dinámicamente con JavaScript -->
+                        </form>
+                        <div id="quiz-feedback"></div>
+                    </div>
+                    <div class="quiz-stats">
+                        <p><strong>Puntuación:</strong> <span id="score-display">0</span>/<span id="total-questions">10</span></p>
+                        <p><strong>Tiempo:</strong> <span id="timer">00:00</span></p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="btn-submit" id="submit-quiz-btn">Corregir Cuestionario <i class="fas fa-check-circle"></i></button>
+                </div>
+            </section>
+
+            <!-- Slide 8: Resultados (antes slide 14) -->
+            <section id="slide-8" class="slide"> <!-- CAMBIADO: de slide-14 a slide-8 -->
+                <div class="slide-header">
+                    <h2><i class="fas fa-trophy"></i> Resultados</h2>
+                </div>
+                <div class="slide-content">
+                    <div id="results-container">
+                        <div class="result-card" id="result-score">
+                            <h3>Tu puntuación</h3>
+                            <div class="score-circle">
+                                <span id="final-score">0</span>/<span id="max-score">10</span>
+                            </div>
+                            <p id="result-message"></p>
+                        </div>
+                        
+                        <div class="result-details">
+                            <h3><i class="fas fa-chart-bar"></i> Detalle por áreas</h3>
+                            <div class="area-results">
+                                <div class="area-result">
+                                    <span class="area-name">LOE General</span>
+                                    <div class="area-bar">
+                                        <div class="area-fill" id="area-loe"></div>
+                                    </div>
+                                    <span class="area-percent" id="area-loe-percent">0%</span>
+                                </div>
+                                
+                                <div class="area-result">
+                                    <span class="area-name">Responsabilidades</span>
+                                    <div class="area-bar">
+                                        <div class="area-fill" id="area-resp"></div>
+                                    </div>
+                                    <span class="area-percent" id="area-resp-percent">0%</span>
+                                </div>
+                                
+                                <div class="area-result">
+                                    <span class="area-name">Agentes</span>
+                                    <div class="area-bar">
+                                        <div class="area-fill" id="area-agentes"></div>
+                                    </div>
+                                    <span class="area-percent" id="area-agentes-percent">0%</span>
+                                </div>
+                                
+                                <div class="area-result">
+                                    <span class="area-name">CTE</span>
+                                    <div class="area-bar">
+                                        <div class="area-fill" id="area-cte"></div>
+                                    </div>
+                                    <span class="area-percent" id="area-cte-percent">0%</span>
+                                </div>
+                                
+                                <div class="area-result">
+                                    <span class="area-name">Colegiación</span>
+                                    <div class="area-bar">
+                                        <div class="area-fill" id="area-coleg"></div>
+                                    </div>
+                                    <span class="area-percent" id="area-coleg-percent">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feedback-actions">
+                            <button class="btn-review" onclick="reviewQuiz()"><i class="fas fa-redo"></i> Revisar respuestas</button>
+                            <button class="btn-restart" onclick="restartQuiz()"><i class="fas fa-sync-alt"></i> Intentar de nuevo</button>
+                            <button class="btn-finish" onclick="showStudentInfoModal()"><i class="fas fa-download"></i> Finalizar actividad</button> actividad</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <button class="btn-prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i> Volver</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Navegación con teclas -->
+        <div class="keyboard-hint">
+            <p><i class="fas fa-keyboard"></i> Usa las teclas <kbd>←</kbd> <kbd>→</kbd> para navegar</p>
+        </div>
+    </div>
+
+    <!-- Modal para revisar respuestas -->
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-clipboard-check"></i> Revisión de respuestas</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="review-content">
+                <!-- Contenido generado dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+<!-- Modal para datos del alumno - VERSIÓN CORREGIDA -->
+<div id="student-info-modal" class="modal" style="display: none;">
+    <div class="modal-content student-modal">
+        <div class="modal-header">
+            <h2><i class="fas fa-user-graduate"></i> Certificado de Resultados</h2>
+            <button class="close-modal" onclick="closeStudentModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="student-form">
+                <h3>Introduce tus datos para generar el certificado</h3>
+                
+                <div id="attempts-warning" class="attempts-warning" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Intentos realizados: <span id="current-attempts">0</span>/3</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="student-name"><i class="fas fa-user"></i> Nombre *</label>
+                    <input type="text" id="student-name" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="student-surname"><i class="fas fa-users"></i> Apellidos *</label>
+                    <input type="text" id="student-surname" placeholder="Tus apellidos" required>
+                </div>
+                
+                <div class="activity-summary">
+                    <h4><i class="fas fa-chart-line"></i> Resumen del Intento Actual</h4>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="summary-label">Puntuación:</span>
+                            <span class="summary-value" id="modal-puntuacion">0/10</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Porcentaje:</span>
+                            <span class="summary-value" id="modal-porcentaje">0%</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Duración:</span>
+                            <span class="summary-value" id="modal-duracion">0:00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Intento Nº:</span>
+                            <span class="summary-value" id="modal-intento">1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="areas-summary">
+                        <h5><i class="fas fa-list-alt"></i> Resultados por áreas:</h5>
+                        <div id="areas-results-list">
+                            <!-- Se llenará dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-note">
+                    <p><i class="fas fa-info-circle"></i> Se generará un certificado en formato imagen (JPG) con todos tus resultados.</p>
+                </div>
+                
+                <div class="form-actions">
+                    <button class="btn-cancel" onclick="closeStudentModal()">Cancelar</button>
+                    <button class="btn-save" onclick="processStudentInfo()">
+                        <i class="fas fa-camera"></i> Generar Certificado
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
